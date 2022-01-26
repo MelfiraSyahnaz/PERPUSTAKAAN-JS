@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud operation in javascript</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+    <table>
+        <tr>
+            <td>
+                <!--HTML form for crud operation-->
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="KodeBuku">Kode Buku</label>
+                        <input type="text" name="KodeBuku" id="KodeBuku" >
+                    </div>
+                    <div>
+                        <label for="peminjam">Nama Peminjam</label>
+                        <input type="text" name="peminjam" id="peminjam" >
+                    </div>
+                    <div>
+                        <label for="judul">Judul Buku</label>
+                        <input type="text" name="judul" id="judul">
+                    </div>
+                    <div>
+                        <label for="tglpinjam">Tanggal Pinjam</label>
+                        <input type="date" name="tglpinjam" id="tglpinjam">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="listPeminjaman">
+                    <thead>
+                        <tr>
+                            <th>Kode Buku</th>
+                            <th>Nama Peminjam</th>
+                            <th>Judul Buku</th>
+                            <th>Tanggal Pinjam</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+ 
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+    <script src="script.js"></script>
+    
+</body>
+ 
+</html>
